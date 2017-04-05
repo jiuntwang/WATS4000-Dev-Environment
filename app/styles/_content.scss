@@ -1,0 +1,20 @@
+//Changing font colors
+body {
+    color: green;
+}
+
+//Experimenting with SASS nesting
+.marketing {
+    a, h4 {
+        color: $brand-warning;
+    }
+    p {
+        color: $brand-primary;
+    }
+}
+
+//Alter gray jumbotron box
+.container .jumbotron {
+    @include border-top-radius(0px);
+    @include border-bottom-radius(50px);
+}
